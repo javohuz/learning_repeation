@@ -1,9 +1,9 @@
 """
-Repeation for my self 
+Repeation for my self   https://quizlet.com/_dcdt7d?x=1jqt&i=52phgt
 
 lesson 8 ruhyatlar bn ishlash
 
-@author: javokhirdeveloper
+@author: rashidovj
 """
 
 #                              lesson_8

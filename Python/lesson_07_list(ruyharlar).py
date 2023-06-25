@@ -1,9 +1,9 @@
 """
-Repeation for my self 
+Repeation for my self    https://quizlet.com/_dcdt7d?x=1jqt&i=52phgt
 
    Lesson_7 -> list => ruyhat
 
-@author: javokhirdeveloper
+@author: rashidovj
 """
 
 #                         Lesson_7 -> list => ruyhat

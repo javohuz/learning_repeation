@@ -1,9 +1,9 @@
 """
-Repeation for my self 
+Repeation for my self  
 
 lesson 6 " raqam bilan ishlash "
 
-@author: javokhirdeveloper
+@author: rashidovj
 """
 #                     lesson_6  -> raqam bilan ishlash          
 

@@ -1,9 +1,9 @@
 """
-Repeation for my self 
+Repeation for my self   https://quizlet.com/_defr0q?x=1jqt&i=52phgt
 
 lesson 9 for takrorolsh aperatori
 
-@author: javokhirdeveloper
+@author: rashidovj
 """
 
 #                                       lesson 9

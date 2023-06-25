@@ -1,9 +1,9 @@
 """
-Repeation for my self 
+Repeation for my self  https://quizlet.com/_deyoqb?x=1jqt&i=52phgt
 
 lesson 5 about string (matnlar bn ishlash)
 
-@author: javokhirdeveloper
+@author: rashidovj
 """
 #                                lesson5
 
