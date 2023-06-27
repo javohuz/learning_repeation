@@ -1293,7 +1293,350 @@ easy stuffs just for repeation
 #         print(f'Bizda {x} mavjud emas')
 
 
+#         lesson 19 funksiyalar    https://quizlet.com/_dfgct2?x=1qqt&i=52phgt
 
+# funksiya bu ma'lum bir vazifani bajarishga mo'ljallangan kodlar yig'indisi.
+# misol uchun print() va range() funksiyasi
+
+# salom beruvchi funksiya
+
+# # def funksiya yasash uchun foydalaniladi 
+
+# def salom_ber():  # salom_ber() -> function name (v)
+#     """salob beradigan function """ # => info 
+#     print("Assalomu alaykum ") # funksiya bajaradigan vazifa code
+
+# salom_ber()
+
+
+# def salom_ber(ism): # ism == parametr
+#     """Fodyalanuvchi ismini qabul qilib, unga salom beruvchi funksiya"""
+#     print(f"Assalomu alaykum, hurmatli {ism.title()}!")
+# salom_ber('Javohir') # javohi == argument
+# salom_ber('Jasur')  # jasur == argunet
+# print(salom_ber.__doc__)
+
+
+# DOCSTRING funksiya haqida malumot => print(smt.__doc__)
+# funksiya haqida malumotni bulish uchun uning nomi va ( ochsak chiqadi 
+
+# def toliq_ism(ism, familiya):
+#     """Foydalanuvchi ism va familiyasini jamlab chiqaruvchi funksiya"""
+#     print(f"Foydalanuvchi ismi: {ism.title()}\n"
+#           f"Foydalanuvchi familiyasi: {familiya.title()}")
+
+
+# toliq_ism('javohir' , 'Rashiov')
+# # kalit usuli 
+# toliq_ism(familiya='Rashidov',ism='javohir')
+
+# STANDART QIYMAT
+# def yosh_hisobla(tugilgan_yil, joriy_yil=2023): # = 2023 => standart qiymat
+#     """Foydalanuvchi tug'ilgan yilidan uning yoshini hisoblaydi"""
+#     print(f"Siz {joriy_yil-tugilgan_yil} yoshdasiz")
+    
+# yosh_hisobla(2004 ,2023)
+# yosh_hisobla(2004)
+
+#                                   amalyot
+
+# def ism_yosh_aniqla(ism,yili):
+#     """ ism va yoshni aniqlaydigan function """
+#     print(f'{ism.title()}ning yoshingiz {2023-yili} yoshdasiz')
+
+# ism = input("ismingizni kiriting >>")
+# yil = input("tugulgan yilingizni kiriting >> ") 
+# ism_yosh_aniqla(ism, int(yil)) 
+
+# def qiymat_top(son1,son2):
+#     """ Sonning katta sonni topib beruvchi function """
+    
+#     if son1 > son2 :
+#         son = son1 
+#     elif son1==son2 :
+#         son = 'kiritilgan sonlar teng' 
+#     else :
+#         son = son2
+#     print(f'{son} soni eng katta ') 
+    
+# son1 = int(input("birinchi raqani kiriting >>"))
+# son2 = int(input("ikkinchi raqani kiriting >>"))
+# qiymat_top(son1,son2)
+
+# def bolinish_alomatlari(son):
+#     for n in range(2, 11):
+#         if not son % n:
+#             print(f"{son} {n} ga qoldiqsiz bo'linadi")
+
+
+# bolinish_alomatlari(20)
+
+#                        lesson 20
+
+# return = qiymat  qaytarish uchun
+
+# def kelmagan_talaba(ism,familiya):
+#     """ ism familiyani kursatadi """
+#     talaba_nomi = f'{ism } {familiya} '
+#     kelgan = f"{ism} kursdan qoldirilsin"
+#     return talaba_nomi , kelgan  # return talaba_nomi degan uzgazuvchimi qaytaradi
+     
+
+# talaba=kelmagan_talaba('obidov' ,'hakim')
+# print(talaba)
+
+#  ixtiyoriy argument kiritsh yani foydalanuvchi kiritsa ishliydi else ok
+# def kelmagan_talaba(ism,familiya , otasi_ismi=''):
+#     """ ism familiyani qaytaruvchi  """
+#     if otasi_ismi :
+#         talaba_nomi = f'{ism } {familiya} {otasi_ismi}'
+#     else :
+#         talaba_nomi = f'{ism } {familiya} '
+#     return talaba_nomi   # return talaba_nomi degan uzgazuvchimi qaytaradi
+    
+# talaba=kelmagan_talaba('obidov' ,'hakim')
+# talaba1=kelmagan_talaba("asdfa",'adfaf','adfafafdasfasd')
+# print(talaba , talaba1)
+
+# ixtiyoriy argument None agar biron uzgaruvchi urniga hech narsa ciqarsak
+
+# def avto_info(kompaniya, model, rangi, korobka, yili, narhi=None):
+#     avto = {'kompaniya':kompaniya,
+#             'model':model,
+#             'rang':rangi,
+#             'korobka':korobka,
+#             'yil':yili,
+#             'narh':narhi}
+#     return avto
+
+# car1 = avto_info('BMW',"x7",'oq','avtomat',2022,40000)
+# car2 = avto_info('BMW',"x7",'oq','avtomat',2022)
+# cars=[car1,car2]
+# print(cars)
+
+# for car in cars :
+#     if car['narh']:
+#         narh = car['narh']
+#     else:
+#          narh='Nomalum'   
+#     print(f"{car['rang']} {car['model']}. Narhi: {narh}")
+
+# range funksiyasining kodi 
+# def rang(min,max,qadam=1):
+#     sonlar = []
+#     while max>min :
+#         sonlar.append(min)
+#         min+=qadam
+#     return sonlar
+# print(rang(1,8,2))
+
+# print(list(range(1,8,2)))
+
+# def avto_info(kompaniya, model, rangi, korobka, yili, narhi=None):
+#     avto = {'kompaniya':kompaniya,
+#             'model':model,
+#             'rang':rangi,
+#             'korobka':korobka,
+#             'yil':yili,
+#             'narh':narhi}
+#     return avto
+
+# print("Saytimizdagi avtolar ro'yxatini shakllantiramiz.")
+# avtolar=[] 
+# while True:
+#     print("\nQuyidagi ma'lumotlarni kiriting",end='')
+#     kompaniya=input("Ishlab chiqaruvchi: ")
+#     model=input("Modeli: ")
+#     rangi=input("Rangi: ")
+#     korobka=input("Korobka: ")
+#     yili=input("Ishlab chiqarilgan yili: ")
+#     narhi=input("Narhi: ")
+    
+#     avtolar.append(avto_info(kompaniya, model, rangi, korobka, yili, narhi))
+    
+#     javob = input("Yana avto qo'shasizmi? (yes/no): ")
+#     if javob=='no':
+#         break
+# for car in avtolar :
+#     if car['narh']:
+#         narh = car['narh']
+#     else:
+#           narh='Nomalum'   
+#     print(f"{car['rang']} {car['model']}. Narhi: {narh}")
+
+
+#                                   amalyot
+
+# def qiymat_top(son1,son2,son3):
+#     """ Sonning katta sonni topib beruvchi function """
+    
+#     if son1 > son2 and son1>son3 and son2>son3 :
+#         son = f'{son1}>{son2}>{son3}'
+#     elif son1==son2==son3 :
+#         son = f'{son1}={son2}={son3}'
+#     elif son1==son2 and son1>son3 :
+#         son = f'{son1}={son2}>{son3}' 
+#     elif son1 < son2 and son2<son3 :
+#         son = f'{son1}<{son2}<{son3}'
+#     elif son1>son2 and son2==son3 :
+#         son = f'{son1}>{son2}={son3}'
+#     elif son1==son2 and son2<son3 :
+#         son = f'{son1}={son2}<{son3}'
+#     elif son1<son2 and son2==son3 :
+#         son = f'{son1}<{son2}={son3}'
+#     elif son1>son2 and son2<son3 :
+#         son = f'{son1}>{son2}<{son3}'
+#     elif son1<son2 and son2<son3 :
+#         son = f'{son1}>{son2}<{son3}'
+#     else :
+#         son = f'{son1}<{son2}>{son3}'
+#     return son   
+  
+# son1 = input("1-son= ")
+# son2 = input("2-son= ")
+# son3 = input("3-son= ")
+
+# qiymatlar = qiymat_top(son1,son2,son3)
+# print(qiymatlar)
+
+
+# def tub_sonlar_top(min, max):
+#     tub_sonlar = []
+#     for n in range(min, max + 1):
+#         tub = True
+#         if n == 1:
+#             tub = False
+#         elif n == 2:
+#             tub = True
+#         else:
+#             for x in range(2, n):
+#                 if n % x == 0:
+#                     tub = False
+                    
+#         if tub:
+#             tub_sonlar.append(n)
+
+#     return tub_sonlar
+# tub1 = tub_sonlar_top(1,100)
+# print(tub1)
+
+# def fibonacci(n):
+#     sonlar = []
+#     for x in range(n):
+#         if x == 0 or x == 1  :
+#             sonlar.append(1)
+#         else:
+#             sonlar.append(sonlar[x - 1] + sonlar[x - 2])
+#     return sonlar
+
+
+# print(fibonacci(10))
+
+#                               lessson 21
+
+#  finction dict qushish 
+
+# def  talabalar_list(names):
+#     """ talabalar bahosi kirish uchun """
+#     talabalar_bahosi = {}
+#     while names :
+#         name = names.pop()
+#         talabalar_bahosi[name] = int(input(f'{name.title()}ning bahosini kiriting '))
+#     return talabalar_bahosi
+
+# students =['Hakim' , 'Vali' , 'Javohir' , 'Avaz']
+# bahosi = talabalar_list(students[:])
+# print(bahosi)
+# print(students)
+
+#                       amalyot
+
+# def katta_harf(lists) :
+#     """ list ichidagilarni katta harf qiladi"""
+#     for n in range(len(lists)) :
+#         lists[n] = lists[n].title()
+#     return lists
+
+
+# ismlar = ['ali', 'vali', 'hasan', 'husan']
+# katta_harf(ismlar)
+# print(ismlar)
+
+
+# def katta_harf(lists) :
+#     """ list ichidagilarni katta harf qiladi"""
+#     katta =[]
+#     listn = lists[:]
+#     for n in range(len(listn)) :
+#         listn[n] = listn[n].title()
+#         katta.append(listn[n])
+#     return katta
+
+
+# ismlar = ['ali', 'vali', 'hasan', 'husan']
+# yangi_ismlar = katta_harf(ismlar)
+# print(ismlar)
+# print(yangi_ismlar)
+
+
+#  finction dict qushish 
+
+# def  talabalar_list(names):
+#     """ talabalar bahosi kirish uchun """
+#     talabalar_bahosi = {}
+#     for n in range(len(names) ):
+#         name = names[n]
+#         talabalar_bahosi[name] = int(input(f'{name.title()}ning bahosini kiriting '))
+#     return talabalar_bahosi
+
+# students =['Hakim' , 'Vali' , 'Javohir' , 'Avaz']
+# bahosi = talabalar_list(students[:])
+# print(bahosi)
+# print(students)
+
+#                           lesson 22 uzgaruvchan finction
+
+#  * va ** yani *args va ** kwargs kw = kayword 
+# *args bu tuple shaklida yukliydi yani finction yaratganda istagancha qiymat
+#  kiritsh mumkun kiritilaganlar tuple yani uzgarmas ruyhat
+#  **kwargs bu dict shaklida yuklaydi 
+
+# def summa(x,y,*sonlar):
+#     """ sonlar yigindisi hisoblasvchi finction """
+#     yigindi = x + y
+#     for n in sonlar:
+#         yigindi += n
+#     return yigindi     # return x=y=sum(sonlar)
+# son =summa(5,5,5,6,6,7,1)   
+# print(son)
+
+#   **kwargs bu dict shaklida yuklaydi 
+# def avto_info(**malumot):
+#     """Avtomobil haqida malumot tuplaydigan finction """
+#     return malumot
+# car1 = avto_info(turi='gm' ,)
+
+
+#                               practice
+
+
+# def summa(x,y,*sonlar):
+#     """ sonlar yigindisi hisoblasvchi finction """
+#     yigindi = x*y
+#     for n in sonlar:
+#         yigindi *= n
+#     return yigindi     
+# son =summa(5,5,5,6,6,7,1)   
+# print(son)
+
+# def info_talaba(ism , familiya , **talaba_info ):
+#     """talabalar haqida balumot yigivchi function """
+#     talaba_info["ismi"]=ism
+#     talaba_info["familiyasi"]=ism
+#     return talaba_info
+
+# talaba = info_talaba("javohir","rashidov",yosh=19)
+# print(talaba)
 
 
 
