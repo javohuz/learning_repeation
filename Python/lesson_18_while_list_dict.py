@@ -78,7 +78,7 @@ for repiation  thttps://quizlet.com/_dfd57j?x=1jqt&i=52phg
 # for k ,v in baholangan_talabalar.items() :
 #     print(f"{k.title()} ning bahosi {v} ")
 
-#                          amalyot  l 18
+#                          amalyot  lesson 18
 
 # mahsulotlar =[]
 # while True :
