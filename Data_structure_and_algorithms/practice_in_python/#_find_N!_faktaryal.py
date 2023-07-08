@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Jul  7 12:08:08 2023
-need to find N!
+
+ex => need to find N! 
 
 1 : start , create N , i 
 2 : create N , i = qiymatni yuklash uchun 
