@@ -1,8 +1,10 @@
 """
 Created on Tue Jul 11 18:53:51 2023
-
-
-
+<<<<<<< HEAD
+rekursiya
+=======
+rekursiya 
+>>>>>>> 8b05ae4f7764cd56630ed814b8e29aaf029015be
 @author: User rashidovj
 """
             
