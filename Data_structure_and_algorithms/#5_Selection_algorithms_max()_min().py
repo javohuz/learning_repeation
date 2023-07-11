@@ -53,11 +53,3 @@ def sum0(array):
         s += a
     return s
 
-a = [ 9 , 33 , 62 , 923 , 12 , 64]
-
-print(min0(a))
-print(min_index(a))
-print(max_index(a))
-print(max0(a))
-print(sum0(a))
-
