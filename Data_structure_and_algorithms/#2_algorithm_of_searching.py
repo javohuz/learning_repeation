@@ -10,10 +10,12 @@ myList = [1,3,4,6,7,8,10,12,23,45,56,78,99]
 #  ex - 1
 def linearSearch(mylist,x):
     n = 0
-    for a in mylist:
+    for a in mylist[n]:
         if a == x:
             return n
         n+=1
+    else:
+        return "the info can't find"
     return None
 
 linearSearch(myList,45)
