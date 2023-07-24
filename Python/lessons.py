@@ -13,7 +13,7 @@
 # ularni ularni birmarta tanlab quyib keyin ishlaturamiz 
 
 # ism="something" => yasalishi shunaqa yana joy tashlash mumkun emas urniga __
-# mavzularni takrorlash uchunlimk
+# mavzularni takrorlash uchun link
 #                  lesson5   https://quizlet.com/_dcdmkv?x=1jqt&i=52phgt
 
 # string -> matn hullas bu matn bu bitta yoki holagancha harf bulishi can
