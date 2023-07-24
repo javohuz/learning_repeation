@@ -10,10 +10,10 @@
 
 # o'zgaruchilar ustida amallar -> uzgaruvchi uzi nima va nimaga kerak 
 # uzgaruvchilar shuchaki kichkila lotin haru=iflari bilan yasaladi masaln (ism)
-# ularni ularni birmarta tanlab quyib keyin ishlaturamiz you cam see
+# ularni ularni birmarta tanlab quyib keyin ishlaturamiz 
 
 # ism="something" => yasalishi shunaqa yana joy tashlash mumkun emas urniga __
-
+# mavzularni takrorlash uchunlimk
 #                  lesson5   https://quizlet.com/_dcdmkv?x=1jqt&i=52phgt
 
 # string -> matn hullas bu matn bu bitta yoki holagancha harf bulishi can
