@@ -120,7 +120,7 @@ int main()
   cout << "   " << endl ; 
   
     	dU2=beta6*(Uka*cosf2+Ukp*sinf2) ;  	  cout <<" Beta =1.0 bulganda  ->  dU2=" << dU2 << " (%)" <<endl;
-  cout << "   " << endl ; 
+  cout << "    " << endl ; 
         
 	    
 	     // RASHIDOV JAVOHIR 211 , M va R ,
