@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jul 19 12:55:40 2023
-# 8 quicksort, Bubblesort , Mergesort algorithms 
+8 quicksort, Bubblesort , Mergesort algorithms 
 @author: User
 """
 
