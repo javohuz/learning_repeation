@@ -75,3 +75,7 @@ print( kucha + " kuchasi,\n" +mahalla + "mahallasi,\n" + shahar + "shahri.\n")
 print(yangi_manzil.title())
 print(yangi_manzil.upper())
 print(yangi_manzil.lower())
+
+
+
+
