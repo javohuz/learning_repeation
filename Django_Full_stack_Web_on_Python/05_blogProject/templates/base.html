@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javohir</title>
+    <link rel="stylesheet"  href="{% static 'css/base.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2><a href="{% url 'home' %}" > Javohir </a></h2>
+    </header>
+
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>
