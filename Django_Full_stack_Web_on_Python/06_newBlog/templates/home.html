@@ -1,12 +1,22 @@
 {% extends 'base.html' %}
 {% block title %}Bosh sahifa{% endblock title %}
 {% block content %}
+    <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #b3b3ff">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          Javohir
+        </a>
+      </div>
+
     {% if user.is_authenticated %}
-    {{ user.username }}!
-    <p><a href="{% url 'logout' %}">Chiqib ketish</a> </p>
+           <a href="{% url 'logout' %}"><button type="button" class="btn btn-danger">Logout</button></a>
     {% else  %}
-        <p>Saytga kitmagansiz</p>
-        <p><a href="{% url 'login' %}">Saytga kirish</a> </p>
-        <p><a href="{% url 'singup' %}">Ruyhatdan utish </a> </p>
+
+        <h6>Saytga kitmagansiz</h6><br>
+        <a href="{% url 'login' %}"><button type="button" class="btn btn-primary">Login</button></a>
+        <a href="{% url 'signup' %}"> <button type="button" class="btn btn-success">Signup</button> </a>
+
     {% endif %}
+    </nav>
+
 {% endblock content %}

@@ -1,10 +1,11 @@
+
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
-{% block title %}Kirish{% endblock title %}
+{% block title %}SignUp{% endblock title %}
 {% block content %}
-    <h1>Saytha kirish </h1>
+    <h2>Ro'yxatdan o'tish</h2>
     <form method="post">{% csrf_token %}
         {{ form|crispy }}<br>
-        <button type="submit" class="btn btn-primary">Kirish</button>
+        <button type="submit" class="btn btn-primary">Yuborish</button>
     </form>
 {% endblock content %}

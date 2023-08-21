@@ -1,14 +1,21 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  >
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}NewBlog{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     </head>
 
-    <body>
+    <body style="background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%">
+
         <main>
             {% block content %}
             {% endblock content %}
         </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </body>
 </html>
