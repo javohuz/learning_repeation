@@ -9,7 +9,18 @@
       </div>
 
     {% if user.is_authenticated %}
-           <a href="{% url 'logout' %}"><button type="button" class="btn btn-danger">Logout</button></a>
+
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">More</button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+            <li><a class="dropdown-item" href="{% url 'password_change'%}">change_password</a></li>
+        </ul>
+     </div>
+        <!--
+        <a href="{% url 'logout' %}"><button type="button" class="btn btn-danger">Logout</button></a>
+        <a href="{% url 'password_change'%}"><button type="button" class="btn btn-danger">change_password</button></a>
+        -->
     {% else  %}
 
         <h6>Saytga kitmagansiz</h6><br>
@@ -18,5 +29,6 @@
 
     {% endif %}
     </nav>
+        <a href="{% url 'article_list' %}"><button type="button" class="btn btn-primary">artiles</button></a>
 
 {% endblock content %}
