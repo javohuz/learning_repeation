@@ -5,10 +5,14 @@ int redOffTime=250;
 int yellowOnTime=250; 
 int yellowOffTime=250; 
 int greenLedpin=11,greenon=250,greenoff=250;
- 
+String redLEDsms="Red LEd is running :" ;
+
 void setup() {
   // put your setup code here, to run once:
-  
+  Serial.begin(9600);
+  String mw1="Hello" , mw2=" welcome to my Program " , mw3 ;
+  mw3=mw1+mw2 ;
+  Serial.println(mw3);
   pinMode(redLEDPin, OUTPUT);  // Tell Arduino that redLEDPin is an output pin
   pinMode(yellowLEDPin, OUTPUT);  //Tell Arduino that yellowLEDPin is an output pin
   pinMode(greenLedpin,OUTPUT);
@@ -17,18 +21,16 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-
-digitalWrite(redLEDPin,HIGH); //Turn red LED on
-delay(redOnTime);             //Leave on for redOnTime
-digitalWrite(redLEDPin,LOW);  //Turn red LED off
-delay(redOffTime);            //Leave off for redOffTime
-
-for (int j=1; j<=2; j=j+1) {     // Start our for loop
+Serial.println(redLEDsms);
+for (int j=1; j<=4; j=j+1) {   
+  Serial.print("  running times:");
+  Serial.println(j);
     digitalWrite(redLEDPin,HIGH); //Turn red LED on
     delay(redOnTime);             //Leave on for redOnTime
     digitalWrite(redLEDPin,LOW);  //Turn red LED off
-    delay(redOffTime);            //Leave off for redOffTime
+    delay(redOffTime);
 }
+Serial.println(" ");
 for (int h=1; h<=2; h=h+1) {
   digitalWrite(yellowLEDPin,HIGH); //Turn yellow LED on
   delay(yellowOnTime);             //Leave on for yellowOnTime
