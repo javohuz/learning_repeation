@@ -2,24 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Practise</title>
+    <title>For Practise</title>
+
 <!--    https://www.w3schools.com/html/   -->
 
 <!--   can create style like that in html -->
-    <style>
-        h1 {
-         color: blue;
-         font-family: verdana;
-         font-size: 300%;
-           }
 
-        p  {
-        color: red;
-        font-family: courier;
-        font-size: 160%;
-}
-    </style>
+<!--    <style>-->
+<!--        h1 {-->
+<!--         color: blue;-->
+<!--         font-family: verdana;-->
+<!--         font-size: 300%;-->
+<!--           }-->
 
+<!--        p  {-->
+<!--        color: red;s-->
+<!--        font-family: courier;-->
+<!--        font-size: 160%;-->
+<!--}-->
+<!--    </style>-->
+
+<!-- Favicon qaysi siteda ekanligni kursatib turadi tepada kichik romkacha -->
+    <link href="img/logo.png" rel="icon" >
+
+<!-- style files-->
+    <link href="style.css" rel="stylesheet" >
 </head>
 
 <body>
@@ -53,7 +60,7 @@
     </ul>
 
     <h1 id="h1">this is heading</h1>
-    <h2 style="color: aqua">2, 3, number size 1 is the biggest , we can give style here or css</h2>
+    <h2 style="color: rgba(0,51,255,0.96)">2, 3, number size 1 is the biggest , we can give style here or css</h2>
 
     <h1 style="text-align:center;">Centered Heading</h1>
     <p style="text-align:center;">Centered paragraph.</p>
@@ -75,26 +82,120 @@
 
 <!-- <img>
 
-The <img> Teg bo'sh, unda faqat atributlar mavjud va yo'q yopish yorlig'iga ega bo'ling.
+The <img>
 
-The <img> Teg ikkita talab qilinadi atributlar:
+    Htmldan foydalaning <img> rasmni aniqlash uchun element
+    Htmldan foydalaning src rasmning URL manzilini aniqlash uchun atribut
+    Htmldan foydalaning alt tasvir uchun muqobil matnni aniqlash uchun atribut, agar uni ko'rsatish mumkin bo'lmasa
+    Htmldan foydalaning width va height atributlar yoki CSS width va height rasm hajmini aniqlash uchun xususiyatlar
+    CSS-dan foydalaning float rasm suzishi uchun xususiyat chapga yoki o'ngga
 
-    src-rasmga yo'lni belgilaydi
-    alt-rasm uchun muqobil matnni belgilaydi
-    <img src="url" alt="alternatetext"> -->
+    <img src="url" alt="alternatetext">
 
-    <img src="img/about1.jpg" alt="about" with="400" height="600"> <!-- for img src => location of img -->
+    matn orqasi rasm joylashtrish yani backround picture
+    <p style="background-image: url('img_girl.jpg');"> bla bal </p> -->
+
+    <div style="text-align: center;">
+        <img src="img/about1.jpg" alt="about" with="400" height="600" usemap="#about" > <!-- for img src => location of img -->
+    </div>
+
+
+     <!-- end img -->
+
+<!-- extra things-->
 
     <hr> <!-- ajratish uchun uzun chiziq -->
     <br> <!-- form new line -->
 
+<!-- end extra things-->
 
-    <ol>
-        <li>Number</li>ss
+<!-- table jadval yaratish -->
+
+<table style="width: 20%">
+    <tr>
+        <th style="width: 50% " colspan="3">some</th>
+        <th>some</th>
+    </tr>
+    <tr style="height: 50px">
+        <td rowspan="3">just</td>
+        <td>just</td>
+        <td>just</td>
+    </tr>
+    <tr>
+        <td>just</td>
+        <td>just</td>
+    </tr>
+</table>
+<!-- table finished-->
+
+<!-- List starts -->
+
+    <ul>
+        <li>.</li>
+        <li>.</li>
+        <li>.</li>
+    </ul>
+
+    <ol type="1" start="20">
+        <li>Number</li>
         <li>2</li>
         <li>3</li>
-        <li>4</li>
-</ol>
+    </ol>
+    <ol type="a" >
+        <li>letrs</li>
+        <li>a</li>
+        <li>b</li>
+    </ol>
+
+
+     <dl>
+         <dt>Coffee</dt>
+         <dd>- black hot drink</dd>
+         <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+<!-- List finish -->
+
+<!-- <div></div> block and inline -->
+
+<div style="background-color:black;color:white;padding:20px;">
+    <h1>Tashkent</h1>
+    <p>London is the capital city of <span style="color: red">England. It is the most populous city </span>in the United Kingdom, </p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia.</p>
+</div>
+
+<!-- <div> finished -->
+
+<!-- class starts cssda chaqirayotganda . bn boshlanadi .sity -->
+<div>
+    <div style="background: black" >
+        <h1 class="city h1" ><!-- h1ni cssda alohida chaqirib qiymat bersa bo'ladi-->Sitys</h1>
+        <h2 class="city">London</h2>
+    </div>
+    <div class="sity">
+        <h1>Tashkent</h1>
+         <p>London is the capital city of England. It is the most populous city in the United Kingdom, </p>
+         <p>Standing on the River Thames, London has been a major settlement for two millennia.</p>
+    </div>
+
+    <div class="london">
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, </p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia.</p>
+    </div>
+</div>
+<!--class finished -->
+
+<!-- id starts id looks like class only one difrenst id nami faqat bitta bulishi kerak
+    boshqalariga uhshamagan bulishi kerak id css da chaqirayotganda # bilan boshlaymiz  -->
+
+<div id="div3" >
+    <a href="#div3" >div3 ni bohslanishi</a>
+</div>
+
+<!-- id finished -->
+
+
 
 </body>
 </html>

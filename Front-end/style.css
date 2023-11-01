@@ -1,0 +1,55 @@
+/* sytle to strings */
+
+h1 {
+    color: green;
+    text-align: center;
+    font-size: 300%;
+}
+
+p {
+    color: blue;
+    text-align: center;
+    font-size: 200%;
+    font-family: "Arial Narrow";
+}
+
+/*style for table */
+
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+th , td {
+    background-color: aquamarine;
+    text-align: left;
+}
+th , td {
+    padding: 15px;
+    /*padding-top: 10px;*/
+    /*padding-bottom: 20px;*/
+    /*padding-left: 30px;*/
+    /*padding-right: 40px;*/
+}
+.sity {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+.city {
+    color: bisque;
+    text-align: center;
+}
+.h1 {
+    color: aquamarine;
+}
+.london {
+    background-color: rgba(71, 191, 255, 0.68);
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+
