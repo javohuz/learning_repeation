@@ -1,4 +1,7 @@
 /* sytle to strings */
+body {
+  background-color: antiquewhite;
+}
 
 h1 {
     color: green;
@@ -51,5 +54,8 @@ th , td {
     margin: 20px;
     padding: 20px;
 }
-
+form {
+    text-align: center;
+    font-size: 300%;
+}
 
