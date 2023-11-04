@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First JS</title>
+
+    <!-- Favicon qaysi siteda ekanligni kursatib turadi tepada kichik romkacha -->
+    <link href="../img/logo.png" rel="icon" >
+
+    <!-- style files-->
+    <link href="style.css" rel="stylesheet" >
+
+</head>
+<body>
+
+<!-- JS -->
+
+<div style="text-align: center ">
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "https://www.w3schools.com/html/pic_bulboff.gif"
+  } else {
+    pic = "https://www.w3schools.com/html/pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif" width="100" height="180">
+<p id="p">
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+</div>
+<!-- ends JS-->
+
+</body>
+</html>

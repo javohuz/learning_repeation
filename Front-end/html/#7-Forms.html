@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+
+    <!-- Favicon qaysi siteda ekanligni kursatib turadi tepada kichik romkacha -->
+    <link href="../img/logo.png" rel="icon" >
+
+    <!-- style files-->
+    <link href="style.css" rel="stylesheet" >
+
+</head>
+<body>
+
+
+<!-- forms starts input types https://www.w3schools.com/html/html_form_input_types.asp -->
+
+    <form action="http://javo.uz" method="GET">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text" size="10"><br>
+        <label for="password" >Password :</label>
+        <input type="password" id="password" name="password" ><br>
+        <button type="submit" >Login</button><br>
+    </form>
+
+    <form action="http://javo.uz" method="get" >
+        <h2>CHouse your favorite web language </h2>
+        <input type="radio" id="html" name="fav" value="html" >
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav" value="css">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="js" name="fav" value="js">
+        <label for="js">JS</label><br>
+    </form>
+
+    <form action="http://javo.uz" method="get">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+        <textarea name="message" rows="5" cols="20">Fikringiz:</textarea>
+    </form>
+
+<!-- end of froms -->
+</body>
+</html>
