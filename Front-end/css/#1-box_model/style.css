@@ -1,0 +1,82 @@
+
+*{
+    text-align: center;
+}
+
+/*backgraound */
+
+h1.color {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+.a {
+    background-color: blue ;
+    color: white;
+    opacity: 0.6;  /* shafoflik */
+    border-width: 10px;
+    border-style: ridge;
+    border-color: green;
+
+}
+.b {
+    background-color: blue ;
+    color: white;
+    opacity: 0.2;  /* shafoflik */
+}
+
+/*backgraound img*/
+.c {
+    text-align: center;
+    background-image: url("background.jpg");
+    color: red;
+    font-size: x-large;
+    margin: 20px;
+    padding: 30px;
+
+}
+
+.d {
+    margin-left: 20px ;
+    border-left: solid darkblue;
+    background-color: aqua;
+    max-width: 250px;
+    max-height: 30px;
+    overflow: hidden;
+    text-align: left;
+    padding: 10px  ;
+}
+
+body {
+    background-image: url("body.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#a {
+    height: auto;
+    background-color: aquamarine;
+    font-size: x-large;
+}
+
+.box1 {
+    background-color: red;
+    max-height: 50px;
+
+
+}.box2 {
+    background-color: red;
+    max-width: 300px;
+    margin: 50px 40px;
+
+}.box3 {
+    background-color: blue;
+    max-width: 600px;
+    max-height: 100px;
+    padding: 20px 40px 10px 1px;
+    overflow: auto;
+
+}.box4 {
+    background-color: red;
+    width: 600px;
+}
