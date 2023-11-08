@@ -1,0 +1,102 @@
+
+    .to-inline{
+        display: inline;
+        background-color: aqua ;
+        margin: 10px;
+    }
+    .to-block{
+        display: block;
+        background-color: red;
+        margin: 10px;
+
+    }
+    .both {
+        display: inline-block;
+        background-color: #cccccc;
+        margin: 10px;
+    }
+    .block-inline{
+        background-color: bisque;
+        margin: 20px;
+    }
+
+    .text-aligy{
+        text-align: center;
+    }
+    .vertical-align{
+        padding: 5px;
+        border: solid 2px;
+    }
+    .box1, .box2, .box3 {
+        vertical-align: bottom;
+    }
+    .box1{
+        display: inline-block;
+        background-color: bisque;
+        width: 60px;
+        height: 50px;
+
+    }
+    .box2{
+        display: inline-block;
+        background-color: bisque;
+        width: 60px;
+        height: 80px;
+    }
+    .box3{
+        display: inline-block;
+        background-color: bisque;
+        width: 60px;
+        height: 90px;
+    }
+
+    .float{
+        margin: 10px;
+        padding: 20px;
+        border: solid 2px black;
+        border-radius: 5px;
+        min-height: 150px ;
+        max-width: 400px;
+    }
+    .float:hover{
+        background-color: black;
+    }
+    .float:active{
+        background-color: blue;
+    }
+
+    .float-span {
+        background-color: red;
+        width: 100px;
+        height: 150px;
+        float: right;
+        margin-left: 10px ;
+    }
+
+    .shadow{
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    .text-type{
+        border: solid 2px black;
+        border-radius: 5px;
+        padding: 10px
+    }
+    .text-type:active{
+        background-color: black;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+    }
+    p.uppercase {
+        text-transform: uppercase;
+    }
+
+    p.lowercase {
+        text-transform: lowercase;
+    }
+
+    p.capitalize {
+        text-transform: capitalize;
+    }
