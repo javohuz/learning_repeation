@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        #footer {
+            color: darkred;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2 id="footer" >Posts here </h2>
+    {% for index in object_list %}
+        <h3>{{ index.title }}</h3>
+        <p>{{ index.summery }}</p>
+        <p>{{ index.data }}</p>
+    {% endfor %}
+</body>
+</html>
