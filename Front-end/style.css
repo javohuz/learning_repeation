@@ -1,0 +1,26 @@
+.box {
+    position: relative;
+    background-color: aqua;
+    height: 50px;
+    padding: 30px;
+    width: 300px;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed-box {
+    position: fixed;
+    background-color: blue;
+    padding: 50px;
+
+}
+body {
+    height: 1000px;
+}
+
+.simple {
+    position: sticky;
+    background-color: black;
+padding: 50px;
+
+}
