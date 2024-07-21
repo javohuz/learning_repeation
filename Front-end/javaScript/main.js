@@ -17,7 +17,7 @@ console.log('myname is', findName());
 let html = false;
 let css = false;
 let js = false;
-let message = ''; // Corrected spelling from `massage` to `message`
+let message = ''; 
 
 if (html && css && js) {
     message = "You can come to our interview";
